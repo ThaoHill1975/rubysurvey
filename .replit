@@ -17,6 +17,7 @@ requiredFiles = [".replit", "replit.nix"]
 [deployment]
 run = "RAILS_ENV=production bundle exec rails server --binding=0.0.0.0"
 deploymentTarget = "gce"
+publicDir = "dist/public"
 
 [[ports]]
 localPort = 3000
