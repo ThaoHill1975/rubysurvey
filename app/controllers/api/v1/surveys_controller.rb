@@ -60,7 +60,7 @@ module Api
       private
 
       def authenticate_admin!
-        admin = env["warden"]&.authenticate(scope: :admin_user)
+        admin = request.env["warden"]&.authenticate(scope: :admin_user)
         render json: { error: "unauthorized" }, status: :unauthorized unless admin
       end
 

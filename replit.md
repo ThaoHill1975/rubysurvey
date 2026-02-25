@@ -49,4 +49,5 @@ A standalone survey application for the Procurated platform. Built with Rails 7 
 
 ## Key Dependencies
 - rails ~> 7.1, pg, devise, sidekiq, vite_rails, rack-cors
-- react, react-dom, typescript, sass, @vitejs/plugin-react
+- react, react-dom, typescript, sass
+- Vite uses esbuild's built-in JSX automatic runtime (no @vitejs/plugin-react) to avoid preamble issues with Replit's proxy
