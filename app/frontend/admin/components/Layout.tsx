@@ -22,7 +22,9 @@ const Layout: React.FC<LayoutProps> = ({ currentUser, children }) => {
     <div className="admin-layout">
       <nav className="admin-layout__nav">
         <div className="admin-layout__nav-brand">
-          <a href="/admin">Survey Admin</a>
+          <a href="/admin">
+            <img src="/images/procurated-logo.png" alt="Procurated" className="admin-layout__logo" />
+          </a>
         </div>
         <div className="admin-layout__nav-links">
           <a href="/admin">Dashboard</a>
