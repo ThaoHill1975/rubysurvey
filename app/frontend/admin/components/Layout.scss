@@ -1,0 +1,64 @@
+.admin-layout {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    height: 56px;
+    background-color: #1e293b;
+    color: #fff;
+    gap: 24px;
+  }
+
+  &__nav-brand a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &__nav-links {
+    display: flex;
+    gap: 16px;
+    flex: 1;
+
+    a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 14px;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  &__nav-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+
+    span {
+      color: #94a3b8;
+    }
+
+    a {
+      color: #f87171;
+      text-decoration: none;
+      font-size: 13px;
+
+      &:hover {
+        color: #ef4444;
+      }
+    }
+  }
+
+  &__main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px;
+  }
+}

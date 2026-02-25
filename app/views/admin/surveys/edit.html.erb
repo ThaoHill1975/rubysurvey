@@ -1,0 +1,1 @@
+<% content_for(:react_props) do %><%= { page: "surveys/edit", surveyId: params[:id], currentUser: current_admin_user.email }.to_json %><% end %>

@@ -1,0 +1,2 @@
+vite: bundle exec vite dev
+web: bundle exec rails server --binding=0.0.0.0 -p 5000

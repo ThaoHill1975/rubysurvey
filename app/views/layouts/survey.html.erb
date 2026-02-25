@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Survey</title>
+  <meta name="csrf-token" content="<%= form_authenticity_token %>">
+  <%= vite_client_tag %>
+  <%= vite_javascript_tag "survey" %>
+</head>
+<body>
+  <div id="survey-root" data-props="<%= content_for?(:react_props) ? yield(:react_props) : '{}' %>"></div>
+</body>
+</html>

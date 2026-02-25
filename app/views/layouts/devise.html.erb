@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Admin - Sign In</title>
+  <style>
+    .devise-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f3f4f6;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .devise-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    .devise-card h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #111827;
+      margin: 0 0 24px;
+      text-align: center;
+    }
+    .devise-card .field {
+      margin-bottom: 16px;
+    }
+    .devise-card label {
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      color: #374151;
+      margin-bottom: 4px;
+    }
+    .devise-card input[type="email"],
+    .devise-card input[type="password"] {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    .devise-card input[type="email"]:focus,
+    .devise-card input[type="password"]:focus {
+      outline: none;
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+    .devise-card .actions input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .devise-card .actions input[type="submit"]:hover {
+      background: #1d4ed8;
+    }
+    .notice, .alert {
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+    .notice { background: #d1fae5; color: #065f46; }
+    .alert { background: #fef2f2; color: #dc2626; }
+  </style>
+</head>
+<body>
+  <div class="devise-container">
+    <div class="devise-card">
+      <h1>Survey Admin</h1>
+      <% if notice %><p class="notice"><%= notice %></p><% end %>
+      <% if alert %><p class="alert"><%= alert %></p><% end %>
+      <%= yield %>
+    </div>
+  </div>
+</body>
+</html>

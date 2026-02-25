@@ -1,0 +1,58 @@
+run = "RAILS_ENV=development bundle exec rails server --binding=0.0.0.0"
+hidden = [".bundle"]
+entrypoint = "app/controllers/application_controller.rb"
+modules = ["ruby-3.2", "nodejs-20"]
+
+[env]
+RACK_MINI_PROFILER = "off"
+PIDFILE = "/tmp/rails_server.pid"
+
+[nix]
+channel = "stable-24_05"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
+
+
+[deployment]
+run = "RAILS_ENV=production bundle exec rails server --binding=0.0.0.0"
+deploymentTarget = "gce"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
+
+[[ports]]
+localPort = 3036
+externalPort = 3000
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[agent]
+expertMode = true
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Start application"
+
+[[workflows.workflow]]
+name = "Start application"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "bash bin/dev"
+waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
