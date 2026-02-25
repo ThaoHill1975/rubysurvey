@@ -5,20 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Procurated Surveys - Sign In</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
     .devise-container {
       min-height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: #f3f4f6;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #f7fafc;
     }
     .devise-card {
       background: #fff;
-      border-radius: 12px;
+      border-radius: 8px;
       padding: 40px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      max-width: 400px;
+      border: 1px solid #e2e8f0;
+      max-width: 420px;
       width: 100%;
     }
     .devise-logo {
@@ -26,13 +35,13 @@
       margin-bottom: 32px;
     }
     .devise-logo img {
-      height: 44px;
+      height: 32px;
       width: auto;
     }
     .devise-card h2 {
       font-size: 20px;
       font-weight: 600;
-      color: #111827;
+      color: #1a202c;
       margin: 0 0 24px;
     }
     .devise-card .field {
@@ -42,46 +51,59 @@
       display: block;
       font-size: 14px;
       font-weight: 500;
-      color: #374151;
-      margin-bottom: 4px;
+      color: #4a5568;
+      margin-bottom: 6px;
     }
     .devise-card input[type="email"],
     .devise-card input[type="password"] {
       width: 100%;
-      padding: 8px 12px;
-      border: 1px solid #d1d5db;
+      padding: 10px 12px;
+      border: 1px solid #cbd5e0;
       border-radius: 6px;
       font-size: 14px;
-      box-sizing: border-box;
+      color: #2d3748;
+      background: #fff;
     }
     .devise-card input[type="email"]:focus,
     .devise-card input[type="password"]:focus {
       outline: none;
-      border-color: #2563eb;
-      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+      border-color: #3182ce;
+      box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+    }
+    .devise-card .actions {
+      margin-top: 8px;
     }
     .devise-card .actions input[type="submit"] {
       width: 100%;
       padding: 10px;
-      background: #2563eb;
+      background: #3182ce;
       color: #fff;
       border: none;
       border-radius: 6px;
       font-size: 14px;
       font-weight: 500;
       cursor: pointer;
+      transition: background-color 0.15s ease;
     }
     .devise-card .actions input[type="submit"]:hover {
-      background: #1d4ed8;
+      background: #2b6cb0;
+    }
+    .devise-card a {
+      color: #3182ce;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .devise-card a:hover {
+      text-decoration: underline;
     }
     .notice, .alert {
-      padding: 10px;
+      padding: 10px 12px;
       border-radius: 6px;
       margin-bottom: 16px;
       font-size: 14px;
     }
-    .notice { background: #d1fae5; color: #065f46; }
-    .alert { background: #fef2f2; color: #dc2626; }
+    .notice { background: #c6f6d5; color: #276749; border: 1px solid #9ae6b4; }
+    .alert { background: #fff5f5; color: #c53030; border: 1px solid #feb2b2; }
   </style>
 </head>
 <body>

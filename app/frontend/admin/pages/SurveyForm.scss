@@ -4,14 +4,14 @@
   h1 {
     font-size: 24px;
     font-weight: 700;
-    color: #111827;
+    color: #1a202c;
     margin: 0 0 24px;
   }
 
   &__error {
-    background: #fef2f2;
-    border: 1px solid #fecaca;
-    color: #dc2626;
+    background: #fff5f5;
+    border: 1px solid #feb2b2;
+    color: #c53030;
     padding: 12px;
     border-radius: 6px;
     margin-bottom: 16px;
@@ -23,12 +23,12 @@
     border-radius: 8px;
     padding: 24px;
     margin-bottom: 16px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
 
     h2 {
       font-size: 18px;
       font-weight: 600;
-      color: #111827;
+      color: #1a202c;
       margin: 0 0 16px;
     }
   }
@@ -44,13 +44,13 @@
 
   &__help {
     font-size: 13px;
-    color: #6b7280;
+    color: #718096;
     margin: 0 0 12px;
   }
 
   &__question {
-    background: #f9fafb;
-    border: 1px solid #e5e7eb;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
     border-radius: 6px;
     padding: 16px;
     margin-bottom: 12px;
@@ -63,7 +63,7 @@
     margin-bottom: 12px;
     font-weight: 600;
     font-size: 14px;
-    color: #374151;
+    color: #4a5568;
   }
 
   &__checkbox {
@@ -71,7 +71,7 @@
     align-items: center;
     gap: 8px;
     font-size: 14px;
-    color: #374151;
+    color: #4a5568;
     cursor: pointer;
 
     input { cursor: pointer; }

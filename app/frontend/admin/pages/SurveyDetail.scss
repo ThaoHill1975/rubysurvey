@@ -10,7 +10,7 @@
     h1 {
       font-size: 24px;
       font-weight: 700;
-      color: #111827;
+      color: #1a202c;
       margin: 0 0 8px;
     }
 
@@ -24,14 +24,14 @@
     font-size: 12px;
     font-weight: 500;
 
-    &--draft { background: #fef3c7; color: #92400e; }
-    &--published { background: #d1fae5; color: #065f46; }
-    &--archived { background: #e5e7eb; color: #374151; }
+    &--draft { background: #fefcbf; color: #975a16; }
+    &--published { background: #c6f6d5; color: #276749; }
+    &--archived { background: #e2e8f0; color: #4a5568; }
   }
 
   &__description {
     font-size: 15px;
-    color: #6b7280;
+    color: #718096;
     margin: 0 0 24px;
   }
 
@@ -40,12 +40,12 @@
     border-radius: 8px;
     padding: 24px;
     margin-bottom: 16px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
 
     h2 {
       font-size: 18px;
       font-weight: 600;
-      color: #111827;
+      color: #1a202c;
       margin: 0 0 16px;
     }
   }
@@ -57,12 +57,12 @@
 
     dt {
       font-weight: 500;
-      color: #374151;
+      color: #4a5568;
       text-transform: capitalize;
     }
 
     dd {
-      color: #6b7280;
+      color: #718096;
       margin: 0;
     }
   }
@@ -71,14 +71,15 @@
     display: flex;
     gap: 16px;
     padding: 16px;
-    background: #f9fafb;
+    background: #f7fafc;
     border-radius: 6px;
     margin-bottom: 8px;
+    border: 1px solid #edf2f7;
   }
 
   &__question-num {
     font-weight: 700;
-    color: #2563eb;
+    color: #3182ce;
     font-size: 14px;
     min-width: 32px;
   }
@@ -90,18 +91,18 @@
   &__question-prompt {
     margin: 0 0 8px;
     font-size: 15px;
-    color: #111827;
+    color: #1a202c;
   }
 
   &__question-meta {
     display: flex;
     gap: 12px;
     font-size: 13px;
-    color: #6b7280;
+    color: #718096;
   }
 
   &__required {
-    color: #dc2626;
+    color: #e53e3e;
     font-weight: 500;
   }
 
@@ -109,7 +110,7 @@
     margin: 8px 0 0;
     padding-left: 20px;
     font-size: 14px;
-    color: #6b7280;
+    color: #718096;
 
     li { margin-bottom: 4px; }
   }

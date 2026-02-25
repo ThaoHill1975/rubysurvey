@@ -116,6 +116,9 @@ const TakeSurvey: React.FC<TakeSurveyProps> = ({ token }) => {
   if (alreadyCompleted || completed) {
     return (
       <div className="survey-take__complete">
+        <div className="survey-take__brand">
+          <img src="/images/procurated-logo.png" alt="Procurated" />
+        </div>
         <div className="survey-take__complete-card">
           <h1>Thank You!</h1>
           <p>Your survey response has been recorded. We appreciate your feedback.</p>
@@ -136,6 +139,9 @@ const TakeSurvey: React.FC<TakeSurveyProps> = ({ token }) => {
 
   return (
     <div className="survey-take">
+      <div className="survey-take__brand">
+        <img src="/images/procurated-logo.png" alt="Procurated" />
+      </div>
       <div className="survey-take__card">
         <div className="survey-take__header">
           <h1>{data.survey.title}</h1>

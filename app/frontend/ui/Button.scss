@@ -6,7 +6,7 @@
   border-radius: 6px;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
   font-family: inherit;
 
   &--sm {
@@ -25,32 +25,32 @@
   }
 
   &--primary {
-    background-color: #2563eb;
+    background-color: #3182ce;
     color: #fff;
-    border-color: #2563eb;
+    border-color: #3182ce;
 
     &:hover:not(:disabled) {
-      background-color: #1d4ed8;
+      background-color: #2b6cb0;
     }
   }
 
   &--secondary {
     background-color: #fff;
-    color: #374151;
-    border-color: #d1d5db;
+    color: #4a5568;
+    border-color: #cbd5e0;
 
     &:hover:not(:disabled) {
-      background-color: #f9fafb;
+      background-color: #f7fafc;
     }
   }
 
   &--danger {
-    background-color: #dc2626;
+    background-color: #e53e3e;
     color: #fff;
-    border-color: #dc2626;
+    border-color: #e53e3e;
 
     &:hover:not(:disabled) {
-      background-color: #b91c1c;
+      background-color: #c53030;
     }
   }
 

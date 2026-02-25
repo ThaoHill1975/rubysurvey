@@ -8,17 +8,18 @@
     h1 {
       font-size: 24px;
       font-weight: 700;
-      color: #111827;
+      color: #1a202c;
       margin: 0;
     }
   }
 
   &__empty {
     text-align: center;
-    color: #6b7280;
+    color: #718096;
     padding: 48px;
     background: #fff;
     border-radius: 8px;
+    border: 1px solid #e2e8f0;
   }
 
   &__grid {
@@ -31,7 +32,12 @@
     background: #fff;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
   }
 
   &__card-header {
@@ -44,7 +50,7 @@
       margin: 0;
       font-size: 16px;
       font-weight: 600;
-      color: #111827;
+      color: #1a202c;
     }
   }
 
@@ -55,20 +61,20 @@
     font-size: 12px;
     font-weight: 500;
 
-    &--draft { background: #fef3c7; color: #92400e; }
-    &--published { background: #d1fae5; color: #065f46; }
-    &--archived { background: #e5e7eb; color: #374151; }
+    &--draft { background: #fefcbf; color: #975a16; }
+    &--published { background: #c6f6d5; color: #276749; }
+    &--archived { background: #e2e8f0; color: #4a5568; }
   }
 
   &__description {
     font-size: 14px;
-    color: #6b7280;
+    color: #718096;
     margin: 0 0 12px;
   }
 
   &__meta {
     font-size: 13px;
-    color: #9ca3af;
+    color: #a0aec0;
     margin-bottom: 16px;
   }
 
