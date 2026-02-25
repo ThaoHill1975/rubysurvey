@@ -15,9 +15,10 @@ requiredFiles = [".replit", "replit.nix"]
 
 
 [deployment]
-run = "RAILS_ENV=production bundle exec rails server --binding=0.0.0.0"
-deploymentTarget = "gce"
+run = ["bash", "-c", "bundle exec rails server --binding=0.0.0.0 -p 5000 -e production"]
+deploymentTarget = "autoscale"
 publicDir = "dist/public"
+build = ["bash", "-c", "bundle exec rake db:migrate && bundle exec rails db:seed && bundle exec vite build"]
 
 [[ports]]
 localPort = 3000
